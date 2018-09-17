@@ -1,0 +1,36 @@
+body {
+  font-family: $ubuntu;
+  font-size: 62.5%;
+}
+// Font weights
+.light {
+  font-weight: 300;
+}
+.regular {
+  font-weight: 400;
+}
+.heavy {
+  font-weight: 700;
+}
+
+// Header sizes
+h1 {
+  font-size: 3.4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.6rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+
+// Create horizontal and vertical center via flex
+.make-flex {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
