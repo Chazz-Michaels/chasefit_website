@@ -1,9 +1,14 @@
+/*
 .navbar {
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
+  height: 100px;
+  width: 100vw;
+  background: gray;
 }
+*/
 .navbar-side {
   z-index: -1;
   min-width: 330px;
@@ -16,7 +21,7 @@
   list-style: none;
   border-width: 0 0 0 1px;
   border-style: solid;
-  border-color: $black;
+  border-color: $c6;
   background: linear-gradient(0deg, cyan, tomato);
   overflow-y: hidden;
   overflow-x: hidden;
@@ -30,12 +35,12 @@
 .navbar-side-item {
   padding: 1.5rem 0;
   margin: 2rem 0;
-  color: $black;
+  color: $c6;
 }
 
 .side-header {
   font-size: 2.4rem;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $c6;
   text-align: center;
 }
 .side-info {
@@ -58,8 +63,23 @@
   right: 0;
   bottom: 0;
   cursor: pointer;
-  background-color: $black;
+  background-color: $c6;
   opacity: 0.8;
   transition: background-color 0.5s, opacity 0.2s;
   z-index: -2;
 }
+
+// Format bootstrap navigation links
+/*
+.navbar-nav {
+  display: inline-block;
+}
+.nav-item {
+  float: left;
+    text-align: left !important;
+}
+.nav-link{
+  cursor: pointer;
+    text-align: left !important;
+}
+*/
