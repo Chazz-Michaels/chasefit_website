@@ -1,0 +1,65 @@
+.navbar {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.navbar-side {
+  z-index: -1;
+  min-width: 330px;
+  height: 100vh;
+  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 100px 1rem 0 1rem;
+  list-style: none;
+  border-width: 0 0 0 1px;
+  border-style: solid;
+  border-color: $black;
+  background: linear-gradient(0deg, cyan, tomato);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  //z-index: 1000;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(-100%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.navbar-side-item {
+  padding: 1.5rem 0;
+  margin: 2rem 0;
+  color: $black;
+}
+
+.side-header {
+  font-size: 2.4rem;
+  border-bottom: 1px solid $black;
+  text-align: center;
+}
+.side-info {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem 1.2rem;
+}
+.reveal {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+.overlay {
+  position: fixed;
+  //display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: $black;
+  opacity: 0.8;
+  transition: background-color 0.5s, opacity 0.2s;
+  z-index: -2;
+}
