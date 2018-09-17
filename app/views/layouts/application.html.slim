@@ -5,7 +5,7 @@ html
       = content_for?(:title) ? yield(:title) : 'ChaseFit | The healthy way.'
     meta[name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"]
     meta name="description" content="#{content_for?(:description) ? yield(:description) : 'ChaseFit'}"
-    == favicon_link_tag asset_path('logo-roughdraft.png'), :rel => 'icon', :type => 'image/x-icon'
+    == favicon_link_tag asset_path('kettlebell.jpg'), :rel => 'icon', :type => 'image/x-icon'
     == stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Audiowide|Ubuntu:300,400,700'
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => 'reload'
     == javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'

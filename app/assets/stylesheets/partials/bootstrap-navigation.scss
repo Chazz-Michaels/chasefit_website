@@ -1,5 +1,6 @@
 .navbar {
   background: $c6 !important;
+  margin-bottom: 2rem;
 }
 .navbar-brand {
   font-family: $audiowide;
@@ -35,4 +36,22 @@
 .nav-link {
   color: $c1 !important;
   font-size: 1rem;
+}
+.dropdown-menu {
+  background-color: $c6 !important;
+}
+.dropdown-item {
+  background-color: $c6 !important;
+  color: $c1 !important;
+
+  &:before {
+    content:'> ';
+    margin-right: 1rem;
+  }
+  &:hover {
+    background: radial-gradient(ellipse, $c5, $c6 65%) !important;
+  }
+}
+.dropdown-divider {
+  color: tomato !important;
 }
